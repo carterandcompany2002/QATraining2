@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Test" >
+    <test name="loginToSlack" enabled="false">
+
+        <classes>
+            <class name="selenium.SlackMessage"/>
+
+        </classes>
+    </test>
+    <test name="Chrometest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="selenium.MultiBrowserTest"/>
+        </classes>
+    </test>
+    <test name="fireFoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="selenium.MultiBrowserTest"/>
+        </classes>
+
+    </test>
+</suite>
